@@ -1,0 +1,53 @@
+{% extends 'global/base.html'%}
+
+{% block body %}
+    <form action="" method="POST">{% csrf_token %}
+            <div class="question-description">
+                {% for field in form %}
+                    <h2>
+                        <label for="field.id_for_label"> {{ field.label }} </label>
+                        {{ field }}
+                        {{ field.errors }}
+                    </h2>
+                    <button type="submit" name="teste" value="testeS">dddd</button>
+                    {% for field in questions%}
+                        <h3>
+                            <label for="field.id_for_label"> {{ field.label }} </label>
+                            {{ field }}
+                            {{ field.errors }}
+                            <button type="submit" name="teste" value="testeS">dddd</button>
+                        </h3>
+                    {% endfor %}
+                {% endfor %}
+
+            </div>
+    </form>
+
+{% endblock %}
+    {% comment %}<section class="questionario">
+        <div class="enviar-formulario">
+            <form class="form-submit" action="">
+                <input class="enviar" type="submit" value="enviar"> 
+            </form>
+        </div>
+
+        <div class="questions">
+            <form class="task-questions" action="POST">
+                <fieldset class="questions-area">
+                    <div>
+                        <legend><textarea cols="70" rows="10"></textarea></legend>
+                    </div>
+                    <div class="ps">
+                        <p><input type="radio" name="teste"> tesreeee</p>
+                        <button class="add-opcao" type="submit">+</button>
+                    </div>
+                    <hr size="3" width="100%" align="center" color="black">
+                </fieldset>
+            </form>
+        </div>
+        <div class="div-add-question">
+            <form action="" class="add-form">
+                <button class="add-question">próxima questão</button>
+            </form>
+        </div>
+    </section>{% endcomment %}

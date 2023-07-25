@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'global/css/style.css'%}">
+    <meta name="viewport" content="width=device-width">
+    <title>{{title_page}}</title>
+
+</head>
+<body>
+    <header class="heading">
+        <a href="{% url 'site_escola:index' %}"><h1>Site Escola</h1></a>
+        <ul class="menu-pages">
+            <li><a href="{% url 'site_escola:task' %}">Tarefas</a></li>
+            <li><a href="">Boletim</a></li>
+            <li><a href="">Sair</a></li>
+        </ul>
+    </header>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.heading {
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 13vh;
+}
+
+.menu-pages {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin-right: 3%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
+
+.menu-pages li {
+    font-family: fantasy;
+}
+
+.menu-pages li:hover {
+    text-decoration: underline aliceblue;
+}
+
+.heading a {
+    color: aliceblue;
+    padding: 1%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+}
+
+.image-container {
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "image-one image-two"
+    "image-one image-three";
+}
+
+.image-one {
+    grid-area: image-one;
+    background: tomato;
+}
+
+.image-two {
+    grid-area: image-two;
+    background: blueviolet;
+}
+
+.image-three {
+    grid-area: image-three;
+    background: yellow;
+}
+
+.image-one, .image-two, .image-three {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 1%;
+}
+
+.image-tilte {
+    width: 100%;
+    height: 20%;
+    background: rgb(94, 94, 94, 0.4);
+}
+
+.box .col {
+    box-sizing: border-box;
+    width: 33.3%;
+    height: 50vh;
+    float: left;
+    padding: 15px;
+}
+
+.box .col .filha {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.task-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    background-color: rgb(94, 94, 94, 0.4);
+    color: aliceblue;
+    width: 100%;
+    height: 20%;
+}
+
+.box-not-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 87vh;
+    font-size: xx-large;
+} 
+
+@media (min-width: 451px) and (max-width: 900px) {
+    .image-container {
+        height: 95%;
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "image-one image-two"
+        "image-one image-two"
+        "image-three image-three";
+    }
+
+    .box .col {
+        width: 50%;
+    }
+
+    .heading {
+        justify-content: center;
+        height: 10vh;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .image-container {
+        height: 95%;
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "image-one image-one"
+        "image-two image-two"
+        "image-three image-three";
+    }
+
+    .box .col {
+        width: 100%;
+    }
+
+    .heading {
+        justify-content: center;
+        height: 10vh;
+    }
+}

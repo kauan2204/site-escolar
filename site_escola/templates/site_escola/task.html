@@ -1,0 +1,18 @@
+{% extends 'global/base.html'%}
+
+{% block body %}
+    <div class="box" id="home">
+    {% for task in task %}
+        <div class="col">
+            <div class="filha">
+                 <a  class="task-name" href="#"><p>{{ task.nome }}</p></a>
+            </div>
+        </div>
+    {% endfor %}
+    {% if not task %}
+        <div class='box-not-task'>
+            <p class="not-task">Não há tarefas no momento...</p>
+        </div>        
+    {% endif %}
+    </div>
+{% endblock %}
