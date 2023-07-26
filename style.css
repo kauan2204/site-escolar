@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-area {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: purple;
+}
+
+.background-destaque-login {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: rgb(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    margin: 1%;
+    width: 30%;
+    height: 50%;
+    border-radius: 5%;
+    font-size: xx-large;
+}
+
+.login-area-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 70%;
+    font-size: xx-large;
+}
+
+.area-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90%;
+}
+
+.passoword, .username {
+    width: 100%;
+    height: 100%;
+    margin: 1%
+
+}
+
+.input-login {
+    width: 99%;
+    height: 55%;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    border: 1px solid black;
+    outline: 0;
+    padding: 1%;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.send-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82%;
+    height: 20%;
+}
+
+.buttom-login {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    outline:none; 
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    background: rgb(27, 31, 43);
+    color: aliceblue;
+}
+
+.buttom-login:hover{
+    transition: 0.1s;
+    background: gray;
+    color: aliceblue;
+}
+
+.error {
+    font-size: 60%;
+    color: tomato;
+}
